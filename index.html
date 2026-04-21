@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precifio - AI SaaS Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0b0f1a] text-white font-sans">
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-6xl font-bold mb-4">Precifio</h1>
+  <p class="text-blue-400 mb-8 font-semibold">
+    Designed to make AI economically sustainable, not just functional
+</p>
+
+ <p class="text-xl text-gray-300 max-w-2xl">
+  I designed and built a cost-optimized AI system that processes financial notes
+  using a hybrid vector + GPT pipeline — reducing unnecessary AI calls while maintaining accuracy.
+</p>
+
+<p class="text-gray-400 mt-4 max-w-xl">
+  Focused on real-world constraints: cost control, async processing,
+  idempotent execution, and scalable multi-user workflows.
+</p>
+  
+  <div class="mt-6 flex gap-4 flex-wrap justify-center">
+    <a href="#engineering" class="bg-blue-600 px-6 py-3 rounded-xl">View System Design</a>
+    <a href="https://precifio.app" target="_blank" class="border border-white px-6 py-3 rounded-xl">Live App</a>
+  </div>
+  
+</section>
+
+<section class="px-6 py-12 max-w-5xl mx-auto">
+  <h2 class="text-2xl font-bold mb-6 text-center">⚡ Key Engineering Highlights</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+
+    <div>
+      <h3 class="text-3xl font-bold text-blue-500">Hybrid AI</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Vector-first pipeline reducing GPT usage and cost
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-blue-500">Async Queue</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Event-driven processing with idempotent job handling
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-blue-500">Diff Engine</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Git-like reconciliation for financial data updates
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="px-6 py-20 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-4">What is Precifio?</h2>
+
+  <p class="text-gray-300 leading-relaxed">
+    Precifio is a full-stack AI system I designed and built to process natural language notes into structured financial data.
+    
+    It combines GPT, vector embeddings, and an event-driven architecture to handle real-time note editing, automated recurring entries, and multi-user collaboration — all while maintaining consistency and minimizing processing cost.
+  </p>
+
+<p class="text-gray-400 mt-4">
+Built as a real-world system handling asynchronous processing, multi-user workflows, and repeated note transformations reliably.
+</p>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="px-6 py-20 bg-[#111827]">
+  <h2 class="text-3xl font-bold text-center mb-10">Core Systems & Capabilities</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🧠 Hybrid AI Classification Engine</h3>
+      <p class="text-gray-300">
+        Built a vector-first classification system with GPT fallback, enabling accurate extraction of financial data from unstructured text while minimizing API cost.
+      </p>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🔍 Natural Language Query Engine</h3>
+      <p class="text-gray-300">
+        Implemented a search layer that interprets user questions and retrieves structured financial insights across notes using combined filtering and semantic matching.
+      </p>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🎤 Voice-to-Structured Input System</h3>
+      <p class="text-gray-300">
+        Designed a real-time voice input pipeline that converts speech into structured notes, seamlessly integrating with the AI classification workflow.
+      </p>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">💰 Real-Time Budget Tracking Engine</h3>
+      <p class="text-gray-300">
+        Built a system that continuously evaluates financial entries against user-defined budgets and triggers alerts based on threshold conditions.
+      </p>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🏷 Dynamic Tagging & Classification</h3>
+      <p class="text-gray-300">
+        Implemented a flexible tagging system that allows users to define custom categories inline, automatically integrating them into filtering and analytics.
+      </p>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🔔 Event-Driven Notification System</h3>
+      <p class="text-gray-300">
+        Designed a notification engine that reacts to financial events, budget thresholds, and collaborative updates in real time.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="engineering" class="px-6 py-20 bg-[#111827]">
+  <h2 class="text-3xl font-bold text-center mb-10">
+    🧠 Engineering Breakdown
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Hybrid AI Pipeline</h3>
+      <p class="text-gray-300">
+        Built a cost-optimized system that prioritizes vector matching and only falls back to GPT when necessary.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Vector-first classification (fast path)</li>
+        <li>• GPT fallback for unmatched segments</li>
+        <li>• Self-learning via embedding storage</li>
+        <li>• Financial gate to avoid unnecessary processing</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Queue-Based Processing System</h3>
+      <p class="text-gray-300">
+        Designed an async pipeline using a pending_notes queue to decouple user actions from AI execution.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Job locking prevents duplicate runs</li>
+        <li>• Idempotent processing</li>
+        <li>• Retry-safe architecture</li>
+        <li>• Handles both manual and auto flows</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Edit Detection System</h3>
+      <p class="text-gray-300">
+        Implemented fingerprint-based diff logic to detect meaningful changes and avoid unnecessary processing or billing.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Canonical text normalization</li>
+        <li>• Dual diff (semantic + raw)</li>
+        <li>• Prevents duplicate charges</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Diff-Based Sync Engine</h3>
+      <p class="text-gray-300">
+        Built a reconciliation system that updates only changed financial entries using stable IDs.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Git-like create/update/delete diff</li>
+        <li>• Stable entry IDs for consistency</li>
+        <li>• Prevents duplication across edits</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Auto Notes Engine</h3>
+      <p class="text-gray-300">
+        Cron-driven system that executes recurring notes and feeds them into the same processing pipeline.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Prevents duplicate daily execution</li>
+        <li>• Permission-based shared execution</li>
+        <li>• Queue-based processing for scalability</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Multi-User Collaboration</h3>
+      <p class="text-gray-300">
+        Designed a shared note system with permission-aware execution and ownership integrity.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Edit permission enforcement</li>
+        <li>• Prevents duplicate execution across users</li>
+        <li>• Maintains single source of truth</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="px-6 py-20 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">
+    🧠 Real-Time Financial Behavior Engine
+  </h2>
+
+  <p class="text-gray-300 text-center max-w-3xl mx-auto mb-12">
+    Beyond simple budgeting, I designed a system that models user financial behavior in real time — combining structured data, time awareness, and intelligent feedback to drive better decisions.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Context Aware -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Context-Aware Budget Tracking</h3>
+      <p class="text-gray-300">
+        Budgets dynamically evaluate real financial activity by combining manual and automated entries with strict filtering.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Filters by classification, type, currency, and time range</li>
+        <li>• Excludes irrelevant or out-of-scope transactions</li>
+        <li>• Reflects only valid financial behavior</li>
+      </ul>
+    </div>
+
+    <!-- Currency -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Multi-Currency Integrity</h3>
+      <p class="text-gray-300">
+        Enforced strict currency separation to prevent inaccurate aggregation and misleading insights.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• No mixing of currencies (₦, $, SAR, etc.)</li>
+        <li>• Prevents false totals and incorrect analytics</li>
+        <li>• Ensures real-world financial accuracy</li>
+      </ul>
+    </div>
+
+    <!-- Time -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Time-Aware Budget Logic</h3>
+      <p class="text-gray-300">
+        Budgets only consider transactions after their creation date, preventing historical data from distorting results.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Uses effective start date logic</li>
+        <li>• Prevents retroactive miscalculations</li>
+        <li>• Aligns with real-world financial timelines</li>
+      </ul>
+    </div>
+
+    <!-- Realtime -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Real-Time Budget Synchronization</h3>
+      <p class="text-gray-300">
+        Integrated Supabase realtime updates to instantly reflect financial changes without requiring page reloads.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Updates on new entries, edits, and auto events</li>
+        <li>• Keeps UI state always current</li>
+        <li>• Eliminates stale financial views</li>
+      </ul>
+    </div>
+
+    <!-- Behavior -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Behavior-Based Budget Calculations</h3>
+      <p class="text-gray-300">
+        System adapts calculations based on user intent — supporting both spending limits and savings goals.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Tracks % spent / saved</li>
+        <li>• Calculates remaining balance dynamically</li>
+        <li>• Supports dual-mode budgeting logic</li>
+      </ul>
+    </div>
+
+    <!-- Notifications -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">State-Aware Notification Engine</h3>
+      <p class="text-gray-300">
+        Built a feedback system that adapts messaging based on user financial behavior and timing.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Detects inactivity, progress, and overspending</li>
+        <li>• Interval-based reminders to avoid spam</li>
+        <li>• End-of-period summaries with insights</li>
+        <li>• Idempotent notification logic (no duplicates)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="px-6 py-20 bg-[#111827]">
+  <h2 class="text-3xl font-bold text-center mb-10">
+    💸 Cost-Aware AI Processing System
+  </h2>
+
+  <p class="text-gray-300 text-center max-w-3xl mx-auto mb-12">
+    Designed a selective AI execution model that minimizes operational cost while preserving full user functionality — ensuring intelligence is only applied when it provides real value.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+
+    <!-- Smart Charging -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Selective Intelligence Execution</h3>
+      <p class="text-gray-300">
+        AI processing is triggered only for meaningful changes, avoiding unnecessary computation and cost.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Charges only on first-time or significant edits</li>
+        <li>• Skips minor or cosmetic updates</li>
+        <li>• Prevents redundant reprocessing</li>
+      </ul>
+    </div>
+
+    <!-- Incremental -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Incremental Processing Engine</h3>
+      <p class="text-gray-300">
+        Built a diff-based system that updates only changed financial entries instead of recomputing entire datasets.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Stable entry IDs ensure consistency</li>
+        <li>• Detects edits vs new entries</li>
+        <li>• Minimizes unnecessary AI calls</li>
+      </ul>
+    </div>
+
+    <!-- Auto Notes -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Zero-Cost Recurring Automation</h3>
+      <p class="text-gray-300">
+        Auto notes reuse existing structure and pipeline logic, avoiding repeated AI classification on every run.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• No repeated AI calls for recurring data</li>
+        <li>• Scales without increasing cost linearly</li>
+        <li>• Maintains consistency with manual flow</li>
+      </ul>
+    </div>
+
+    <!-- Freemium -->
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Hybrid Free + Intelligent Usage Model</h3>
+      <p class="text-gray-300">
+        Users can freely create and manage notes, while AI-powered intelligence is applied selectively when needed.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Non-financial notes incur zero cost</li>
+        <li>• AI activates only for structured extraction</li>
+        <li>• Encourages usage before monetization</li>
+      </ul>
+    </div>
+
+    <!-- Fairness -->
+    <div class="bg-[#1f2937] p-6 rounded-xl md:col-span-2">
+      <h3 class="font-bold text-xl mb-2">Fairness & Trust-Oriented Billing</h3>
+      <p class="text-gray-300">
+        Designed a system that aligns cost with value, preventing users from being charged for redundant or low-impact actions.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• No charge for repeated or unchanged actions</li>
+        <li>• Eliminates hidden cost loops</li>
+        <li>• Builds long-term user trust and retention</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="text-gray-400 text-center mt-12 max-w-3xl mx-auto">
+    This approach transforms AI from a constantly running cost into a controlled, value-driven system — making the product both scalable and economically sustainable.
+  </p>
+</section>
+
+<section class="px-6 py-20 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">
+    📊 Temporal Financial Reporting Engine
+  </h2>
+
+  <p class="text-gray-300 text-center max-w-3xl mx-auto mb-12">
+    Built a weekly financial aggregation system that transforms raw user notes into structured, queryable financial reports — enabling time-based financial analysis across all users.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Time-Based Data Partitioning</h3>
+      <p class="text-gray-300">
+        Financial entries are grouped into strict weekly boundaries, ensuring consistent temporal analysis of spending behavior.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• One page per week (deterministic slicing)</li>
+        <li>• Prevents cross-week data pollution</li>
+        <li>• Enables historical financial tracking</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Cross-User Financial Aggregation</h3>
+      <p class="text-gray-300">
+        System aggregates structured entries from all users’ notes into a unified reporting layer.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Multi-user data normalization</li>
+        <li>• Unified reporting pipeline</li>
+        <li>• Consistent financial schema enforcement</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Multi-Metric Financial Breakdown</h3>
+      <p class="text-gray-300">
+        Each entry is decomposed into structured financial dimensions for deeper analysis.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• Spent / Earned / Saved / Planned / Transferred</li>
+        <li>• Category-based classification</li>
+        <li>• Note-level traceability</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">Pagination-Driven Weekly Navigation</h3>
+      <p class="text-gray-300">
+        Each week is treated as an independent dataset, enabling clean pagination and historical browsing.
+      </p>
+      <ul class="text-gray-400 mt-3 text-sm space-y-1">
+        <li>• One-week-per-view architecture</li>
+        <li>• Efficient data loading strategy</li>
+        <li>• Scales with growing financial history</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mt-10 bg-black text-green-400 p-6 rounded-xl text-sm overflow-x-auto">
+    <p class="mb-2">📌 Weekly Report Schema Preview</p>
+    <pre>
+Date | Note Name | Category | Amount | Spent | Earned | Saved | Planned | Transferred
+    </pre>
+  </div>
+
+  <p class="text-gray-400 text-center mt-10 max-w-3xl mx-auto">
+    This system transforms raw financial notes into structured weekly intelligence, enabling users and systems to analyze financial behavior over time with precision.
+  </p>
+</section>
+
+<section class="px-6 py-20 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-center">📊 Real System Logs</h2>
+
+  <pre class="bg-black text-green-400 p-6 rounded-xl text-sm overflow-x-auto">
+[2026-04-20 10:21:03] 📥 AUTO NOTE QUEUED
+note_id: 3f927a28...
+
+[2026-04-20 10:21:04] 🔐 PERMISSION_CHECK
+executor: user_2 | owner: user_1
+
+[2026-04-20 10:21:05] 🧠 VECTOR CACHE HIT
+Skipped GPT call
+
+[2026-04-20 10:21:06] 💳 CREDIT CHECK PASSED
+
+[2026-04-20 10:21:07] ✅ PROCESSING COMPLETE
+</pre>
+</section>
+
+<!-- DEMO VIDEOS -->
+<section class="px-6 py-20 bg-[#111827] text-center">
+  <h2 class="text-3xl font-bold mb-4">Product Demonstrations</h2>
+
+  <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+    Real walkthrough of how Precifio transforms natural notes into structured financial intelligence using AI, automation, and real-time processing.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+    <!-- VIDEO 1 -->
+    <div class="bg-[#1f2937] rounded-xl overflow-hidden shadow-lg">
+
+      <div class="relative cursor-pointer group" onclick="playVideo(this)">
+
+        <img
+          src="/videos/precifio-preview-1.png"
+          alt="Smart Notes Preview"
+          class="w-full h-56 object-cover group-hover:opacity-90 transition"
+        />
+
+        <div class="absolute inset-0 flex items-center justify-center">
+          
+        </div>
+
+        <iframe
+          class="hidden w-full h-56"
+          data-src="https://www.youtube.com/embed/U9EeSAnC1Xc?autoplay=1&rel=0&modestbranding=1"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <div class="p-5 text-left">
+        <h3 class="font-bold text-lg mb-2">Smart Notes → AI Extraction Engine</h3>
+        <p class="text-gray-300 text-sm">
+          Demonstrates how natural language notes are parsed into structured financial data without forms or manual input.
+        </p>
+      </div>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="bg-[#1f2937] rounded-xl overflow-hidden shadow-lg">
+
+      <div class="relative cursor-pointer group" onclick="playVideo(this)">
+
+        <img
+          src="/videos/precifio-preview-2.png"
+          alt="Finance Tracking Preview"
+          class="w-full h-56 object-cover group-hover:opacity-90 transition"
+        />
+
+        <div class="absolute inset-0 flex items-center justify-center">
+    
+        </div>
+
+        <iframe
+          class="hidden w-full h-56"
+          data-src="https://www.youtube.com/embed/SmXtLVkTG24?autoplay=1&rel=0&modestbranding=1"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <div class="p-5 text-left">
+        <h3 class="font-bold text-lg mb-2">Automated Financial Intelligence System</h3>
+        <p class="text-gray-300 text-sm">
+          Shows how income, expenses, and savings are automatically detected and converted into structured analytics.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="px-6 py-20 bg-[#0f172a]">
+  <h2 class="text-3xl font-bold text-center mb-8">
+    💸 Built for Real-World AI Cost Constraints
+  </h2>
+
+  <p class="text-gray-300 text-center max-w-3xl mx-auto mb-10">
+    Most AI systems continuously run expensive models on every user action.
+    I designed Precifio differently — a system where intelligence is applied
+    only when it creates real value.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">⚡ Smart Cost Control</h3>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• First classification triggers AI</li>
+        <li>• Minor edits are completely free</li>
+        <li>• Only meaningful changes re-trigger processing</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🔁 Zero-Cost Automation</h3>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Auto notes reuse existing structured data</li>
+        <li>• No repeated AI calls for recurring entries</li>
+        <li>• Scales without increasing API cost</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">🧠 Free Without Credits</h3>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Users can write and manage notes freely</li>
+        <li>• App works fully without requiring payment</li>
+        <li>• AI activates only when needed</li>
+      </ul>
+    </div>
+
+    <div class="bg-[#1f2937] p-6 rounded-xl">
+      <h3 class="font-bold text-xl mb-2">📝 Dual-Purpose System</h3>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Financial notes → structured AI processing</li>
+        <li>• Non-financial notes → completely free</li>
+        <li>• Works as both AI assistant + personal notebook</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="px-6 py-20 text-center">
+  <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
+
+  <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+    Open to AI Engineer, Full-Stack SaaS, and Remote Development roles.  
+    Let’s build or discuss opportunities.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+
+    <!-- Email (primary) -->
+    <a href="mailto:preciousezechukwu563@gmail.com"
+       class="bg-blue-600 px-6 py-3 rounded-xl w-56">
+      📧 Email Me
+    </a>
+
+    <!-- WhatsApp (secondary) -->
+    <a href="https://wa.me/2349063347770"
+       target="_blank"
+       class="border border-white px-6 py-3 rounded-xl w-56">
+      💬 WhatsApp Me
+    </a>
+    </div>
+
+    <p class="text-gray-500 text-sm mt-6">
+    Usually respond within a few hours ⚡
+    </p>
+  
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-gray-500">
+  Built by an AI SaaS Engineer • Precifio Portfolio
+</footer>
+
+
+<script>
+function playVideo(card) {
+  const iframe = card.querySelector("iframe");
+  const img = card.querySelector("img");
+
+  if (!iframe || !iframe.dataset.src) return;
+
+  iframe.src = iframe.dataset.src;
+
+  img.style.display = "none";
+  iframe.style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
